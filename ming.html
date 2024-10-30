@@ -19,19 +19,22 @@
 
   body {
     background: #000;
+    background: url("emperor/gamebg_1.jpg");
+    background-size: cover;
   }
 
   .ok {
     position: absolute;
     color: #fff;
-    font-size: 46px;
+    font-size: 3.833333333333rem;
   }
 
   .playico {
-    width: 86px;
-    height: 86px;
+    width: 7.166666666667rem;
+    height: 7.166666666667rem;
     position: absolute;
     background: url("emperor/start.png");
+    background-size: cover;
     cursor: pointer;
     animation: zd .5s infinite;
   }
@@ -50,12 +53,13 @@
   }
 
   .win {
-    width: 1200px;
-    height: 693px;
+    width: 100rem;
+    height: 57.75rem;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
   }
 
   .wn {
@@ -69,6 +73,7 @@
 
   .kj {
     background: url("emperor/start_box.png");
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -78,23 +83,24 @@
 
   .gamebg {
     background: url("emperor/gamebg_1.jpg");
-    width: 1126px;
-    height: 621px;
-    left: 46px;
-    top: 50px;
+    background-size: cover;
+    width: 93.833333333333rem;
+    height: 51.75rem;
+    left: 3.833333333333rem;
+    top: 4.166666666667rem;
     position: absolute;
   }
 
   .title {
     color: #fff;
-    width: 420px;
-    height: 40px;
-    line-height: 40px;
+    width: 35rem;
+    height: 3.333333333333rem;
+    line-height: 3.333333333333rem;
     position: absolute;
     left: 50%;
-    top: 15px;
-    margin-left: -210px;
-    font-size: 30px;
+    top: 1.25rem;
+    margin-left: -17.5rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 0px #000000;
@@ -112,11 +118,16 @@
   }
 
   .quan {
-    width: 108px;
-    height: 108px;
+    width: 9rem;
+    height: 9rem;
     cursor: move;
     position: absolute;
     user-select: none;
+  }
+  .quan img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .quan.fg {
@@ -130,15 +141,16 @@
   }
 
   .quan .back {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1.333333333333rem;
+    line-height: 1.833333333333rem;
     position: absolute;
     top: 0;
     left: 0;
     text-align: center;
     width: 100%;
-    line-height: 108px;
+    line-height:9rem;
     background: url(emperor/quanbg.png) no-repeat center center;
+    background-size: cover;
     transition: 0.5s ease-in-out;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -177,17 +189,17 @@
       <div class="title">明帝王图</div>
       <div v-if="step===1" v-cloak class="playico" @click="next"></div>
       <div v-else-if="step===2" v-cloak class="sortbox"
-           :style="{transform: 'translateX('+54+'px)',width:per * (108 + gap)+'px',height:(Math.ceil(list.length/per) * (108 + gap)+(108 + gap) + gap * lastNum)+'px'}">
+           :style="{transform: 'translateX('+(54/12)+'rem)',width:per * ((108 + gap)/12)+'rem',height:(Math.ceil(list.length/per) * ((108 + gap)/12)+((108 + gap)/12) + gap/12 * lastNum)+'rem'}">
         <div class="sortboxn">
           <div class="quan" :class="{quanxx:item.kong}" v-for="item in list"
-               :style="{left:item.left+'px',top:item.top+'px',zIndex:item.zIndex}">
+               :style="{left:(item.left/12)+'rem',top:(item.top/12)+'rem',zIndex:item.zIndex}">
             <img :src="'emperor/'+item.img" class="front" v-if="!item.kong">
             <div class="back" v-if="!item.kong">{{item.title}}</div>
           </div>
           <div @mouseenter="clickVoice" @mousedown="mousedown(item)" @mousemove="mousemove(item)" @mouseup="mouseup(item)"
-               @mouseleave="mouseleave(item)" class="quan fg"
+               @mouseleave="mouseleave(item)" @touchstart="touchstart(item)" @touchmove="touchmove(item)" @touchend="touchend(item)" class="quan fg"
                v-for="(item,xh) in dragList"
-               :style="{left:item.left+'px',top:item.top+'px',zIndex:item.zIndex}">
+               :style="{left:(item.left/12)+'rem',top:(item.top/12)+'rem',zIndex:item.zIndex}">
             <img :src="'emperor/'+item.img" class="front">
             <div class="back">{{item.title}}</div>
           </div>
@@ -330,6 +342,24 @@ new Vue({
             this.$set(el, 'top', Math.ceil(nums / this.per) * (108 + this.gap) + this.gap * this.lastNum)
         })
         this.dragListInit = JSON.parse(JSON.stringify(this.dragList));
+        //
+        let _this=this
+        let sw=window.innerWidth
+        chuli(sw)
+        window.addEventListener('resize',()=>{
+            sw=window.innerWidth
+            chuli(sw)
+        })
+        function chuli(sw) {
+            if(sw>1200){
+                sw=1200
+            }
+             let ls=sw/100
+            _this.bili=ls/12
+
+            document.documentElement.style.cssText='font-size:'+ls+'px'
+
+        }
     },
     watch: {
         list: {
@@ -360,6 +390,26 @@ new Vue({
             this.bgVoice()
 
         },
+         touchstart(item) {
+            this.down = true
+            this.oldx = event.targetTouches[0].pageX
+            this.oldy = event.targetTouches[0].pageY
+            this.savex = item.left
+            this.savey = item.top
+            this.$set(item, 'zIndex', 1000)
+        },
+        touchmove(item) {
+            if (this.down) {
+                let left = this.savex + (event.targetTouches[0].pageX - this.oldx)/this.bili
+                let top = this.savey + (event.targetTouches[0].pageY - this.oldy)/this.bili
+                this.$set(item, 'left', left)
+                this.$set(item, 'top', top)
+
+            }
+        },
+        touchend(item) {
+            this.mouseup(item, 'no')
+        },
         mousedown(item) {
             this.down = true
             this.oldx = event.pageX
@@ -371,8 +421,8 @@ new Vue({
         },
         mousemove(item) {
             if (this.down) {
-                let left = this.savex + event.pageX - this.oldx
-                let top = this.savey + event.pageY - this.oldy
+                let left = this.savex + (event.pageX - this.oldx)/this.bili
+                let top = this.savey + (event.pageY - this.oldy)/this.bili
                 this.$set(item, 'left', left)
                 this.$set(item, 'top', top)
             }

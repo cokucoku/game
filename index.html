@@ -24,21 +24,22 @@
   }
 
   .mykt {
-    font-size: 60px;
+    font-size: 5rem;
     font-style: normal;
     font-weight: bold;
   }
 
   body {
-    background: #000;
+    background: #000;   background: url(emperor/gamebg_2.jpg) #e7f4d6  repeat-x;
 
   }
 
   .playico {
-    width: 86px;
-    height: 86px;
+    width: 7.166666666667rem;
+    height: 7.166666666667rem;
     position: absolute;
     background: url("emperor/start.png");
+    background-size: cover;
     cursor: pointer;
     animation: zd .5s infinite;
   }
@@ -53,7 +54,7 @@
   .ok {
     position: absolute;
     color: #fff;
-    font-size: 46px;
+    font-size: 3.833333333333rem;
   }
 
   #app {
@@ -63,8 +64,8 @@
   }
 
   .win {
-    width: 1200px;
-    height: 693px;
+    width: 100rem;
+    height: 57.75rem;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -82,6 +83,7 @@
 
   .kj {
     background: url("emperor/start_box.png");
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -110,9 +112,9 @@
   }
 
   .gamefront-n .img {
-    width: 400px;
-    height: 400px;
-    margin-left: 100px;
+    width: 33.333333333333rem;
+    height: 33.333333333333rem;
+    margin-left: 8.333333333333rem;
   }
 
   .gamefront-n .img img {
@@ -122,15 +124,15 @@
   }
 
   .gamefront-n .text {
-    width: calc(100% - 500px);
+    width: calc(100% - 41.666666666667rem);
   }
 
   .gamefront-n .text .list {
-    font-size: 38px;
+    font-size: 3.166666666667rem;
   }
 
   .gamefront-n .text .list li {
-    height: 80px;
+    height: 6.666666666667rem;
     color: #fff;
     display: flex;
     align-items: center;
@@ -138,9 +140,10 @@
   }
 
   .gamefront-n .text .list li span {
-    width: 208px;
+    width: 17.333333333333rem;
     height: 100%;
     background: url("emperor/ct/normal.png") no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,29 +164,30 @@
 
 
   .gamebg .bg {
-    width: 1100px;
-    height: 600px;
+    width: 91.666666666667rem;
+    height: 50rem;
     background: url(emperor/gamebg_2.jpg) #e7f4d6;
+    background-size: cover;
     position: absolute;
-    left: 48px;
-    top: 48px;
+    left: 4rem;
+    top: 4rem;
   }
 
   h3 {
-    font-size: 56px;
+    font-size: 4.666666666667rem;
   }
 
 
   .title {
     color: #fff;
-    width: 420px;
-    height: 40px;
-    line-height: 40px;
+    width: 35rem;
+    height: 3.333333333333rem;
+    line-height: 3.333333333333rem;
     position: absolute;
     left: 50%;
-    top: 15px;
-    margin-left: -210px;
-    font-size: 30px;
+    top: 1.25rem;
+    margin-left: -17.5rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 0px #000000;
@@ -315,6 +319,22 @@ new Vue({
         },]
     },
     mounted() {
+        //
+        let sw=window.innerWidth
+        chuli(sw)
+        window.addEventListener('resize',()=>{
+            sw=window.innerWidth
+            chuli(sw)
+        })
+        function chuli(sw) {
+            if(sw>1200){
+                sw=1200
+            }
+             let ls=sw/100
+
+            document.documentElement.style.cssText='font-size:'+ls+'px'
+
+        }
 
     },
     watch: {

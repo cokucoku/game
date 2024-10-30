@@ -22,10 +22,11 @@
   }
 
   .playico {
-    width: 86px;
-    height: 86px;
+    width: 7.166666666667rem;
+    height: 7.166666666667rem;
     position: absolute;
     background: url("emperor/start.png");
+    background-size: cover;
     cursor: pointer;
     animation: zd .5s infinite;
   }
@@ -40,7 +41,7 @@
   .ok {
     position: absolute;
     color: #fff;
-    font-size: 46px;
+    font-size: 3.833333333333rem;
   }
 
   #app {
@@ -50,8 +51,8 @@
   }
 
   .win {
-    width: 1200px;
-    height: 693px;
+    width: 100rem;
+    height: 57.75rem;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -69,6 +70,7 @@
 
   .kj {
     background: url("emperor/start_box.png");
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -92,68 +94,73 @@
   }
 
   .gamebg .bg {
-    width: 1100px;
-    height: 600px;
+    width: 91.666666666667rem;
+    height:50rem;
     background: url(emperor/gamebg_2.jpg) #e7f4d6;
+    background-size: cover;
     position: absolute;
-    left: 48px;
-    top: 48px;
+    left: 4rem;
+    top: 4rem;
   }
 
   .gamebg .cloudanim {
-    width: 1100px;
-    height: 600px;
+    width: 91.666666666667rem;
+    height:50rem;
     position: absolute;
-    left: 48px;
-    top: 48px;
+    left: 4rem;
+    top: 4rem;
     overflow: hidden;
   }
 
   .gamebg .cloudanim .cloud {
-    width: 328px;
-    height: 90px;
+    width: 27.333333333333rem;
+    height: 7.5rem;
     background: url(emperor/cloud1.png);
+    background-size: cover;
     position: absolute;
-    left: 20px;
-    top: 110px;
+    left: 1.666666666667rem;
+    top: 9.166666666667rem;
     animation: move 32s linear infinite;
   }
 
   @keyframes move {
     0% {
-      left: -328px
+      left: -27.333333333333rem
     }
     100% {
-      left: 1100px
+      left: 91.666666666667rem
     }
 
   }
 
   .gamebg .cloud {
-    width: 1100px;
-    height: 600px;
+    width: 91.666666666667rem;
+    height: 50rem;
     background: url(emperor/cloud.png);
+    background-size: cover;
     position: absolute;
-    left: 20px;
-    top: 48px;
+    left: 1.666666666667rem;
+    top: 4rem;
   }
 
   .gamebg .building {
-    width: 1100px;
-    height: 600px;
+    width: 91.666666666667rem;
+    height: 50rem;
     background: url(emperor/building.png);
+    background-size: cover;
     position: absolute;
-    left: 20px;
-    top: 48px;
+    left: 1.666666666667rem;
+    top: 4rem;
   }
 
   .gamebg .statusbar, .gamefront .statusbar {
-    width: 888px;
-    height: 149px;
+    width: 74rem;
+    height: 12.416666666667rem;
     background: url(emperor/statusbar.png);
+    background-size: cover;
     position: absolute;
     left: 50%;
-    bottom: 54px;
+    bottom:4.5rem;
     transform: translateX(-50%);
     z-index: 1;
   }
@@ -164,8 +171,8 @@
   }
 
   .gamefront .statusbar ul li {
-    width: 79px;
-    height: 93px;
+    width: 6.583333333333rem;
+    height: 7.75rem;
     display: flex;
     position: absolute;
     cursor: pointer;
@@ -174,12 +181,12 @@
 
   .gamefront .statusbar ul li i {
     color: #fff;
-    font-size: 12px;
+    font-size: 1rem;
     position: absolute;
     z-index: 999;
     background: #000;
-    padding: 6px 8px;
-    border-radius: 5px;
+    padding: 0.5rem 0.666666666667rem;
+    border-radius: 0.416666666667rem;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -195,13 +202,13 @@
 
   .gamefront .statusbar ul li i:after {
     content: '';
-    border-width: 34px 14px;
+    border-width: 2.833333333333rem 1.166666666667rem;
     border-color: #000 transparent transparent transparent;
     border-style: solid;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 5px;
+    top: 0.416666666667rem;
     z-index: -1;
   }
 
@@ -216,16 +223,16 @@
 
   .gamefront .targets {
     position: absolute;
-    left: 192px;
-    top: 195px;
+    left: 16rem;
+    top: 16.25rem;
     display: flex;
   }
 
   .gamefront .targets li {
-    border: 2px dashed #fff;
-    width: 73px;
-    height: 94px;
-    margin: 1px;
+    border: 0.166666666667rem dashed #fff;
+    width: 6.083333333333rem;
+    height: 7.833333333333rem;
+    margin: 0.083333333333rem;
     display: flex;
     cursor: pointer;
     justify-content: center;
@@ -234,52 +241,52 @@
 
 
   .gamefront .targets li:nth-child(2) {
-    margin-top: 11px;
+    margin-top: 0.916666666667rem;
   }
 
   .gamefront .targets li:nth-child(3) {
-    margin-top: 22px;
+    margin-top: 1.833333333333rem;
   }
 
   .gamefront .targets li:nth-child(4) {
-    margin-top: 31px;
+    margin-top: 2.583333333333rem;
   }
 
   .gamefront .targets li:nth-child(5) {
-    margin-top: 40px;
+    margin-top: 3.333333333333rem;
   }
 
   .gamefront .targets li:nth-child(6) {
-    margin-top: 43px;
+    margin-top:3.583333333333rem;
   }
 
   .gamefront .targets li:nth-child(7) {
-    margin-top: 50px;
+    margin-top: 4.166666666667rem;
   }
 
   .gamefront .targets li:nth-child(8) {
-    margin-top: 56px;
+    margin-top:4.666666666667rem;
   }
 
   .gamefront .targets li:nth-child(9) {
-    margin-top: 60px;
+    margin-top: 5rem;
   }
 
   .gamefront .targets li:nth-child(10) {
-    margin-top: 62px;
+    margin-top: 5.166666666667rem;
   }
 
 
   .title {
     color: #fff;
-    width: 420px;
-    height: 40px;
-    line-height: 40px;
+    width: 35rem;
+    height: 3.333333333333rem;
+    line-height: 3.333333333333rem;
     position: absolute;
     left: 50%;
-    top: 15px;
-    margin-left: -210px;
-    font-size: 30px;
+    top: 1.25rem;
+    margin-left: -17.5rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 0px #000000;
@@ -310,9 +317,9 @@
         <div class="gamefront-n">
           <div class="statusbar">
             <ul>
-              <li :style={left:item.left+'px',top:item.top+'px',zIndex:item.zIndex} v-for="(item,xh) in list"
+              <li :style={left:(item.left/12)+'rem',top:(item.top/12)+'rem',zIndex:item.zIndex} v-for="(item,xh) in list"
                   @mousedown="mousedown(item)"
-                  @mousemove="mousemove(item)" @mouseup="mouseup(item)" @mouseleave="mouseleave(item)">
+                  @mousemove="mousemove(item)" @mouseup="mouseup(item)" @mouseleave="mouseleave(item)" @touchstart="touchstart(item)" @touchmove="touchmove(item)" @touchend="touchend(item)">
                 <img :src="'emperor/'+item.img" :style="{opacity:item.down?.8:1}"><i
                   class="tooltip">{{item.title}}</i>
               </li>
@@ -386,6 +393,24 @@ new Vue({
         ]
     },
     mounted() {
+        //
+        let _this=this
+        let sw=window.innerWidth
+        chuli(sw)
+        window.addEventListener('resize',()=>{
+            sw=window.innerWidth
+            chuli(sw)
+        })
+        function chuli(sw) {
+            if(sw>1200){
+                sw=1200
+            }
+            let ls=sw/100
+            _this.bili=ls/12
+            document.documentElement.style.cssText='font-size:'+ls+'px'
+
+        }
+        //
         this.shuffle(this.list)
         this.list.forEach((el, xh) => {
             this.$set(el, 'down', false)
@@ -407,8 +432,8 @@ new Vue({
                         li.forEach((el, xh) => {
                             this.position.push({
                                 id: xh,
-                                left: el.offsetLeft,
-                                top: el.offsetTop,
+                                left: el.offsetLeft/this.bili,
+                                top: el.offsetTop/this.bili,
                                 ok: false//ok为true意思是位置上有动物了
                             })
                         })
@@ -450,6 +475,27 @@ new Vue({
             }
             return arr
         },
+        touchstart(item) {
+            this.down = true
+            this.oldx = event.targetTouches[0].pageX
+            this.oldy = event.targetTouches[0].pageY
+            this.savex = item.left
+            this.savey = item.top
+            this.$set(item, 'down', true)
+            this.$set(item, 'zIndex', 1000)
+        },
+        touchmove(item) {
+            if (this.down) {
+                let left = this.savex + (event.targetTouches[0].pageX - this.oldx)/this.bili
+                let top = this.savey + (event.targetTouches[0].pageY - this.oldy)/this.bili
+                this.$set(item, 'left', left)
+                this.$set(item, 'top', top)
+
+            }
+        },
+        touchend(item) {
+            this.mouseup(item)
+        },
         mousedown(item) {
             this.down = true
             this.oldx = event.pageX
@@ -461,10 +507,11 @@ new Vue({
         },
         mousemove(item) {
             if (this.down) {
-                let left = this.savex + event.pageX - this.oldx
-                let top = this.savey + event.pageY - this.oldy
+                let left = this.savex + (event.pageX - this.oldx)/this.bili
+                let top = this.savey + (event.pageY - this.oldy)/this.bili
                 this.$set(item, 'left', left)
                 this.$set(item, 'top', top)
+
             }
         },
         mouseleave(item) {
@@ -478,12 +525,12 @@ new Vue({
                 return el.id === item.id
             })
             //较对位置
-            let statusbarLeft = document.querySelector('.statusbar').offsetLeft
-            let statusbarTop = document.querySelector('.statusbar').offsetTop
-            let statusbarWidth = document.querySelector('.statusbar').scrollWidth
+            let statusbarLeft = document.querySelector('.statusbar').offsetLeft/this.bili
+            let statusbarTop = document.querySelector('.statusbar').offsetTop/this.bili
+            let statusbarWidth = document.querySelector('.statusbar').scrollWidth/this.bili
             let baseBar = statusbarLeft - statusbarWidth / 2
-            let targetsLeft = document.querySelector('.targets').offsetLeft
-            let targetsTop = document.querySelector('.targets').offsetTop
+            let targetsLeft = document.querySelector('.targets').offsetLeft/this.bili
+            let targetsTop = document.querySelector('.targets').offsetTop/this.bili
 
             let disTop = Math.abs(targetsTop - statusbarTop)
             let disLeft = Math.abs(baseBar - targetsLeft)
