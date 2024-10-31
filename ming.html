@@ -18,7 +18,7 @@
   }
 
   body {
-    background: #000;
+    background: #faf8c9;
   }
 
   .ok {
@@ -31,7 +31,7 @@
     width: 7.166666666667rem;
     height: 7.166666666667rem;
     position: absolute;
-    background: url("emperor/start.png");
+    background: url("img/ming/start.png");
     background-size: cover;
     cursor: pointer;
     animation: zd .5s infinite;
@@ -70,7 +70,7 @@
   }
 
   .kj {
-    background: url("emperor/start_box.png");
+    background: url("img/ming/start_box.png");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -80,7 +80,7 @@
   }
 
   .gamebg {
-    background: url("emperor/gamebg_1.jpg");
+    background: url("img/ming/gamebg_1.jpg");
     background-size: cover;
     width: 93.833333333333rem;
     height: 51.75rem;
@@ -147,7 +147,7 @@
     text-align: center;
     width: 100%;
     line-height:9rem;
-    background: url(emperor/quanbg.png) no-repeat center center;
+    background: url(img/ming/quanbg.png) no-repeat center center;
     background-size: cover;
     transition: 0.5s ease-in-out;
     transform-style: preserve-3d;
@@ -177,8 +177,8 @@
 </head>
 <body>
 <div id="app">
-   <audio ref="audio"></audio>
-  <audio src="2.mp3" ref="bg" loop></audio>
+   <audio ref="audio" src="img/ming/click.wav"></audio>
+  <audio src="img/ming/2.mp3" ref="bg" loop></audio>
   <div class="win">
     <div class="wn">
       <div class="gamebg">
@@ -191,14 +191,14 @@
         <div class="sortboxn">
           <div class="quan" :class="{quanxx:item.kong}" v-for="item in list"
                :style="{left:(item.left/12)+'rem',top:(item.top/12)+'rem',zIndex:item.zIndex}">
-            <img :src="'emperor/'+item.img" class="front" v-if="!item.kong">
+            <img :src="'img/ming/'+item.img" class="front" v-if="!item.kong">
             <div class="back" v-if="!item.kong">{{item.title}}</div>
           </div>
           <div @mouseenter="clickVoice" @mousedown="mousedown(item)" @mousemove="mousemove(item)" @mouseup="mouseup(item)"
                @mouseleave="mouseleave(item)" @touchstart="touchstart(item)" @touchmove="touchmove(item)" @touchend="touchend(item)" class="quan fg"
                v-for="(item,xh) in dragList"
                :style="{left:(item.left/12)+'rem',top:(item.top/12)+'rem',zIndex:item.zIndex}">
-            <img :src="'emperor/'+item.img" class="front">
+            <img :src="'img/ming/'+item.img" class="front">
             <div class="back">{{item.title}}</div>
           </div>
         </div>
@@ -207,8 +207,8 @@
     </div>
   </div>
 </div>
-<script src="./gsap.min.js" type="text/javascript"></script>
-<script src="./vue.min.js" type="text/javascript"></script>
+<script src="js/gsap.min.js" type="text/javascript"></script>
+<script src="js/vue.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 new Vue({
     el: '#app',
@@ -222,84 +222,84 @@ new Vue({
         list: [
             {
                 id: 3,
-                img: 'ming/game-4_07.png',
+                img: 'pic/game-4_07.png',
                 title: '名宣宗朱瞻基'
             },
             {
                 id: 1,
-                img: 'ming/game-4_03.png',
+                img: 'pic/game-4_03.png',
                 title: '明成祖朱棣'
             },
             {
                 id: -1,
-                img: 'ming/game-4_01.png',
+                img: 'pic/game-4_01.png',
                 title: '明太祖朱元璋'
             },
             {
                 id: 0,
-                img: 'ming/game-4_02.png',
+                img: 'pic/game-4_02.png',
                 title: '明惠宗朱允炆'
             },
 
             {
                 id: 2,
-                img: 'ming/game-4_05.png',
+                img: 'pic/game-4_05.png',
                 title: '明仁宗朱高炽'
             },
 
             {
                 id: 4,
-                img: 'ming/game-4_09.png',
+                img: 'pic/game-4_09.png',
                 title: '明英宗朱祁镇'
             },
             {
                 id: 5,
-                img: 'ming/game-4_11.png',
+                img: 'pic/game-4_11.png',
                 title: '明代宗朱祁钰'
             },
             {
                 id: 6,
-                img: 'ming/game-4_13.png',
+                img: 'pic/game-4_13.png',
                 title: '明宪宗朱见深'
             },
             {
                 id: 7,
-                img: 'ming/game-4_15.png',
+                img: 'pic/game-4_15.png',
                 title: '明孝宗朱祐樘'
             },
             {
                 id: 8,
-                img: 'ming/game-4_24.png',
+                img: 'pic/game-4_24.png',
                 title: '明武宗朱厚照'
             },
             {
                 id: 9,
-                img: 'ming/game-4_25.png',
+                img: 'pic/game-4_25.png',
                 title: '明世宗朱厚熜'
             },
             {
                 id: 10,
-                img: 'ming/game-4_26.png',
+                img: 'pic/game-4_26.png',
                 title: '明穆宗朱载垕'
             },
             {
                 id: 11,
-                img: 'ming/game-4_27.png',
+                img: 'pic/game-4_27.png',
                 title: '明神宗朱翊钧'
             },
             {
                 id: 12,
-                img: 'ming/game-4_28.png',
+                img: 'pic/game-4_28.png',
                 title: '明光宗朱常洛'
             },
             {
                 id: 13,
-                img: 'ming/game-4_29.png',
+                img: 'pic/game-4_29.png',
                 title: '明熹宗朱由校'
             },
             {
                 id: 14,
-                img: 'ming/game-4_30.png',
+                img: 'pic/game-4_30.png',
                 title: '明思宗朱由检'
             },
 
@@ -376,7 +376,7 @@ new Vue({
     },
     methods: {
         clickVoice(){
-            this.$refs.audio.src='click.wav'
+            //this.$refs.audio.src='img/ming/click.wav'
             this.$refs.audio.play()
         },
         bgVoice(){
