@@ -2,72 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2fb250-8fae-4c61-a99d-09c2db4edb78" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/click.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/animal/animal_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/building.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/cloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/cloud1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/choose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/hyqxt.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/ok.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/1.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ct/work/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/gamebg_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/gamebg_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_03.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/ming/game-4_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/quanbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/start.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/start_box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emperor/statusbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gsap.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ming.html" beforeDir="false" afterPath="$PROJECT_DIR$/ming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thd.html" beforeDir="false" afterPath="$PROJECT_DIR$/thd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,19 +15,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+            <state relative-caret-position="152">
+              <caret line="80" column="68" selection-start-line="80" selection-start-column="68" selection-end-line="80" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
+            <state relative-caret-position="-3796">
               <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
             </state>
           </provider>
@@ -132,10 +67,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/Desktop/celebrating-petanque_.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/career.html" />
         <option value="$PROJECT_DIR$/thd.html" />
         <option value="$PROJECT_DIR$/ming.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -205,12 +140,12 @@
       <option name="presentableId" value="Default" />
       <updated>1730251411735</updated>
       <workItem from="1730251413238" duration="23891000" />
-      <workItem from="1730336043725" duration="10040000" />
+      <workItem from="1730336043725" duration="10909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33931000" />
+    <option name="totallyTimeSpent" value="34800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -303,17 +238,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/ming.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+        <state relative-caret-position="-3796">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ming.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="152">
+          <caret line="80" column="68" selection-start-line="80" selection-start-column="68" selection-end-line="80" selection-end-column="68" />
         </state>
       </provider>
     </entry>

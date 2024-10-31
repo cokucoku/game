@@ -64,6 +64,12 @@
     padding-bottom: 45.384615384615%;
     position: relative;
   }
+  #app ul li .li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
   #app .con{
     width: 95%;
     max-width: 1000px;
@@ -78,12 +84,7 @@
   <div class="title">益智游戏</div>
   <div class="con">
     <ul>
-      <li><div class="li"> <img src=""></div></li>
-      <li><img src=""></li>
-      <li><img src=""></li>
-      <li><img src=""></li>
-      <li><img src=""></li>
-      <li><img src=""></li>
+      <li v-for="item in list"><div class="li"> <img :src="item.tpic"></div></li>
     </ul>
   </div>
 </div>
@@ -94,8 +95,23 @@
 <script type="text/javascript">
 new Vue({
     el: '#app',
-    data: {},
+    data: {
+        list:[]
+    },
     mounted() {
+        let data = {
+            app_key: '1D5AF16FD7D90EE3C5CF70D088249505',
+            model_name: 'game',
+            perpage: 1000,
+            order: ["id DESC"]
+        }
+        axios({
+            method: "post",
+            url: 'https://hn216.api.yesapi.cn/api/App/Table/FreeQuery',
+            data: Qs.stringify(data)
+        }).then((rs) => {
+            this.list = rs.data.data.list
+        })
 
     },
 })
