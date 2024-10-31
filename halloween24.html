@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2024年万圣节前夕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #fff;
+  }
+
+
+
+  </style>
+</head>
+<body>
+<div id="app">
+  <iframe src="https://www.google.com/logos/2024/halloween24/rc3/halloween24.html"></iframe>
+</div>
+<script src="js/gsap.min.js" type="text/javascript"></script>
+<script src="js/vue.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+new Vue({
+    el: '#app',
+    data: {
+        step: 1,
+        down: false,
+        oldx: 0,
+        oldy: 0,
+        savex: 0,
+        savey: 0,
+        position: [],//这个保存正确的位置
+        dragListInit: [],//保存可以移动的初始信息
+        list: [
+            {
+                id: 9,
+                img: 'pic/animal_3.png',
+                title: '龙'
+            }, {
+                id: 8,
+                img: 'pic/animal_9.png',
+                title: '凤'
+            }, {
+                id: 7,
+                img: 'pic/animal_1.png',
+                title: '狮'
+            }, {
+                id: 6,
+                img: 'pic/animal_7.png',
+                title: '海马'
+            }, {
+                id: 5,
+                img: 'pic/animal_6.png',
+                title: '天马'
+            }, {
+                id: 4,
+                img: 'pic/animal_5.png',
+                title: '押鱼'
+            }, {
+                id: 3,
+                img: 'pic/animal_4.png',
+                title: '狻猊'
+            }, {
+                id: 2,
+                img: 'pic/animal_10.png',
+                title: '獬豸'
+            }, {
+                id: 1,
+                img: 'pic/animal_2.png',
+                title: '斗牛'
+            }, {
+                id: 0,
+                img: 'pic/animal_8.png',
+                title: '行什'
+            },
+        ]
+    },
+    mounted() {
+        //
+        let _this=this
+        let sw=window.innerWidth
+        chuli(sw)
+        window.addEventListener('resize',()=>{
+            sw=window.innerWidth
+            chuli(sw)
+        })
+        function chuli(sw) {
+            if(sw>1200){
+                sw=1200
+            }
+            let ls=sw/100
+            _this.bili=ls/12
+            document.documentElement.style.cssText='font-size:'+ls+'px'
+
+        }
+        //
+        this.shuffle(this.list)
+        this.list.forEach((el, xh) => {
+            this.$set(el, 'down', false)
+            this.$set(el, 'zIndex', 0)
+            this.$set(el, 'left', xh * 79 + 40)
+            this.$set(el, 'top', 40)
+        })
+        this.dragListInit = JSON.parse(JSON.stringify(this.list));
+    },
+    watch: {
+        step: {
+            immediate: true,
+            handler(value) {
+                if (value === 2) {
+                    this.$nextTick(() => {
+                        //保存位置
+                        let targets = document.querySelector('.targets')
+                        let li = targets.querySelectorAll('li')
+                        li.forEach((el, xh) => {
+                            this.position.push({
+                                id: xh,
+                                left: el.offsetLeft/this.bili,
+                                top: el.offsetTop/this.bili,
+                                ok: false//ok为true意思是位置上有动物了
+                            })
+                        })
+                    })
+                }
+            }
+        },
+        position: {
+            immediate: false,
+            deep: true,
+            handler(value) {
+                let fi = value.every((el) => {
+                    return el.ok
+                })
+                if (fi) {
+                    this.step = 3
+                }
+            }
+        },
+    },
+    methods: {
+        clickVoice(){
+            this.$refs.audio.src='img/thd/click.wav'
+            this.$refs.audio.play()
+        },
+        bgVoice(){
+            this.$refs.bg.play()
+        },
+        next(){
+            this.step=2
+            this.clickVoice()
+            this.bgVoice()
+        },
+        shuffle(arr) {
+            let i = arr.length;
+            while (i) {
+                let j = Math.floor(Math.random() * i--);
+                [arr[j], arr[i]] = [arr[i], arr[j]];
+            }
+            return arr
+        },
+        touchstart(item) {
+            this.down = true
+            this.oldx = event.targetTouches[0].pageX
+            this.oldy = event.targetTouches[0].pageY
+            this.savex = item.left
+            this.savey = item.top
+            this.$set(item, 'down', true)
+            this.$set(item, 'zIndex', 1000)
+        },
+        touchmove(item) {
+            if (this.down) {
+                let left = this.savex + (event.targetTouches[0].pageX - this.oldx)/this.bili
+                let top = this.savey + (event.targetTouches[0].pageY - this.oldy)/this.bili
+                this.$set(item, 'left', left)
+                this.$set(item, 'top', top)
+
+            }
+        },
+        touchend(item) {
+            this.mouseup(item)
+        },
+        mousedown(item) {
+            this.down = true
+            this.oldx = event.pageX
+            this.oldy = event.pageY
+            this.savex = item.left
+            this.savey = item.top
+            this.$set(item, 'down', true)
+            this.$set(item, 'zIndex', 1000)
+        },
+        mousemove(item) {
+            if (this.down) {
+                let left = this.savex + (event.pageX - this.oldx)/this.bili
+                let top = this.savey + (event.pageY - this.oldy)/this.bili
+                this.$set(item, 'left', left)
+                this.$set(item, 'top', top)
+
+            }
+        },
+        mouseleave(item) {
+            this.mouseup(item)
+        },
+        mouseup(item) {
+            this.clickVoice()
+            this.down = false
+            this.$set(item, 'down', false)
+            let fi = this.dragListInit.filter((el) => {
+                return el.id === item.id
+            })
+            //较对位置
+            let statusbarLeft = document.querySelector('.statusbar').offsetLeft/this.bili
+            let statusbarTop = document.querySelector('.statusbar').offsetTop/this.bili
+            let statusbarWidth = document.querySelector('.statusbar').scrollWidth/this.bili
+            let baseBar = statusbarLeft - statusbarWidth / 2
+            let targetsLeft = document.querySelector('.targets').offsetLeft/this.bili
+            let targetsTop = document.querySelector('.targets').offsetTop/this.bili
+
+            let disTop = Math.abs(targetsTop - statusbarTop)
+            let disLeft = Math.abs(baseBar - targetsLeft)
+
+            let fix = this.position.filter((el) => {
+                return Math.abs(item.left - disLeft - el.left) < 10 && Math.abs(item.top + disTop - el.top) < 10
+            })
+            if (fix[0]) {
+                if (fix[0].id === item.id) {
+                    gsap.to(item, .2, {
+                        left: fix[0].left + disLeft,
+                        top: fix[0].top - disTop,
+                        onComplete: () => {
+                            this.$set(item, 'zIndex', 0)
+                            this.$set(fix[0], 'ok', true)
+                        }
+                    });
+
+                } else {
+                    gsap.to(item, .2, {
+                        left: fi[0].left,
+                        top: fi[0].top,
+                        onComplete: () => {
+                            this.$set(item, 'zIndex', 0)
+                        }
+                    });
+                }
+
+            } else {
+                gsap.to(item, .2, {
+                    left: fi[0].left,
+                    top: fi[0].top,
+                    onComplete: () => {
+                        this.$set(item, 'zIndex', 0)
+                    }
+                });
+            }
+        },
+    }
+})
+</script>
+
+</body>
+
+</html>
