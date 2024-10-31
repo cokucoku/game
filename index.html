@@ -32,18 +32,20 @@
   }
 
   body {
-    background: var(--white);
+    background: var(--black);
 
   }
 
   .title {
-    background: var(--header);
     font-size: clamp(30px, 3vw, 60px);
     font-weight: bold;
     display: flex;
     justify-content: center;
     padding: clamp(25px, 3vw, 30px);
-    border-bottom: solid 1px var(--line);
+    border-bottom: solid 1px var(--gray3);
+    background-image: -webkit-linear-gradient(top, #e40000, #ff0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   #app ul {
