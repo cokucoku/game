@@ -23,19 +23,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Greedy-Snake.html">
+        <entry file="file://$PROJECT_DIR$/valentines-day.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="192">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/img/greedysnake/snakeyear13.js">
+        <entry file="file://$PROJECT_DIR$/img/valentinesday/ferris13-2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="111" column="185" selection-start-line="111" selection-start-column="185" selection-end-line="111" selection-end-column="185" />
+            <state relative-caret-position="352">
+              <caret line="30" column="1569" lean-forward="true" selection-start-line="30" selection-start-column="1569" selection-end-line="30" selection-end-column="1569" />
+              <caret line="32" column="248" lean-forward="true" selection-start-line="32" selection-start-column="248" selection-end-line="32" selection-end-column="248" />
+              <caret line="33" column="217" lean-forward="true" selection-start-line="33" selection-start-column="217" selection-end-line="33" selection-end-column="217" />
             </state>
           </provider>
         </entry>
@@ -44,9 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>position</find>
-      <find>1px</find>
-      <find>bili</find>
       <find>touchstart</find>
       <find>this.bili</find>
       <find>dragList</find>
@@ -74,6 +73,9 @@
       <find>img/basketball</find>
       <find>/logos/2012</find>
       <find>/logos/2013</find>
+      <find>mp3</find>
+      <find>snake.mp3</find>
+      <find>/logos</find>
     </findStrings>
     <replaceStrings>
       <replace>/img/halloween24/</replace>
@@ -107,6 +109,8 @@
         <option value="$PROJECT_DIR$/img/football/soccer12-3.js" />
         <option value="$PROJECT_DIR$/Greedy-Snake.html" />
         <option value="$PROJECT_DIR$/img/greedysnake/snakeyear13.js" />
+        <option value="$PROJECT_DIR$/valentines-day.html" />
+        <option value="$PROJECT_DIR$/img/valentinesday/ferris13-2.js" />
       </list>
     </option>
   </component>
@@ -139,7 +143,7 @@
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="greedysnake" type="462c0819:PsiDirectoryNode" />
+              <item name="valentinesday" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,12 +191,12 @@
       <workItem from="1730251413238" duration="23891000" />
       <workItem from="1730336043725" duration="11552000" />
       <workItem from="1730359326548" duration="7961000" />
-      <workItem from="1730422612971" duration="14178000" />
+      <workItem from="1730422612971" duration="15317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57582000" />
+    <option name="totallyTimeSpent" value="58721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -377,17 +381,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Greedy-Snake.html">
+    <entry file="file://$PROJECT_DIR$/img/greedysnake/snakeyear13.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="199">
+          <caret line="23" column="713" lean-forward="true" selection-start-line="23" selection-start-column="713" selection-end-line="23" selection-end-column="713" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/greedysnake/snakeyear13.js">
+    <entry file="file://$PROJECT_DIR$/Greedy-Snake.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="111" column="185" selection-start-line="111" selection-start-column="185" selection-end-line="111" selection-end-column="185" />
+        <state relative-caret-position="456">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/valentines-day.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/valentinesday/ferris13-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="30" column="1569" lean-forward="true" selection-start-line="30" selection-start-column="1569" selection-end-line="30" selection-end-column="1569" />
+          <caret line="32" column="248" lean-forward="true" selection-start-line="32" selection-start-column="248" selection-end-line="32" selection-end-column="248" />
+          <caret line="33" column="217" lean-forward="true" selection-start-line="33" selection-start-column="217" selection-end-line="33" selection-end-column="217" />
         </state>
       </provider>
     </entry>
