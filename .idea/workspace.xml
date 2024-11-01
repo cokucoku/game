@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a2fb250-8fae-4c61-a99d-09c2db4edb78" name="默认的" comment="" />
+    <list default="true" id="6a2fb250-8fae-4c61-a99d-09c2db4edb78" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/pic/hurdles.psd" beforeDir="false" afterPath="$PROJECT_DIR$/pic/hurdles.psd" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hurdles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
+            <state relative-caret-position="553">
               <caret line="219" column="17" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
               <folding>
                 <element signature="e#578#697#2" expanded="true" />
@@ -34,11 +36,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/img/hurdles/hurdles12-5.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basketball.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="34" column="239" selection-start-line="34" selection-start-column="239" selection-end-line="34" selection-end-column="239" />
+            <state relative-caret-position="824">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+              <caret line="223" column="31" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
+              <folding>
+                <element signature="e#598#717#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/img/basketball/basketball12-3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="26" column="327" selection-start-line="26" selection-start-column="313" selection-end-line="26" selection-end-column="327" />
             </state>
           </provider>
         </entry>
@@ -47,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dragListInit</find>
       <find>list</find>
       <find>mouseleave</find>
       <find>position</find>
@@ -77,6 +92,7 @@
       <find>ddllog</find>
       <find>moon.js</find>
       <find>logos/2012/</find>
+      <find>img/basketball</find>
     </findStrings>
     <replaceStrings>
       <replace>/img/halloween24/</replace>
@@ -102,6 +118,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/hurdles.html" />
         <option value="$PROJECT_DIR$/img/hurdles/hurdles12-5.js" />
+        <option value="$PROJECT_DIR$/basketball.html" />
+        <option value="$PROJECT_DIR$/img/basketball/basketball12-3.js" />
       </list>
     </option>
   </component>
@@ -134,7 +152,7 @@
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="hurdles" type="462c0819:PsiDirectoryNode" />
+              <item name="basketball" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -150,6 +168,9 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\leeao\github\game\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\leeao\github\game" />
     </key>
@@ -179,12 +200,12 @@
       <workItem from="1730251413238" duration="23891000" />
       <workItem from="1730336043725" duration="11552000" />
       <workItem from="1730359326548" duration="7961000" />
-      <workItem from="1730422612971" duration="11227000" />
+      <workItem from="1730422612971" duration="12099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54631000" />
+    <option name="totallyTimeSpent" value="55503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -299,9 +320,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/hurdles/hurdles12-5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="34" column="239" selection-start-line="34" selection-start-column="239" selection-end-line="34" selection-end-column="239" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hurdles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
+        <state relative-caret-position="553">
           <caret line="219" column="17" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
           <folding>
             <element signature="e#578#697#2" expanded="true" />
@@ -309,10 +337,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/hurdles/hurdles12-5.js">
+    <entry file="file://$PROJECT_DIR$/basketball.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="34" column="239" selection-start-line="34" selection-start-column="239" selection-end-line="34" selection-end-column="239" />
+        <state relative-caret-position="824">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <caret line="223" column="31" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
+          <folding>
+            <element signature="e#598#717#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/basketball/basketball12-3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="26" column="327" selection-start-line="26" selection-start-column="313" selection-end-line="26" selection-end-column="327" />
         </state>
       </provider>
     </entry>
