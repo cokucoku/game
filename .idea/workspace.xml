@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a2fb250-8fae-4c61-a99d-09c2db4edb78" name="默认的" comment="" />
+    <list default="true" id="6a2fb250-8fae-4c61-a99d-09c2db4edb78" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/halloween24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,17 +20,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="248">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/halloween24.html">
+        <entry file="file://$PROJECT_DIR$/gumby.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
+            <state relative-caret-position="752">
+              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+              <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+              <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+              <caret line="440" column="51" selection-start-line="440" selection-start-column="51" selection-end-line="440" selection-end-column="51" />
+              <caret line="445" column="30" selection-start-line="445" selection-start-column="30" selection-end-line="445" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -35,10 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sw</find>
-      <find>ok</find>
-      <find>gap</find>
-      <find>mykt</find>
       <find>step</find>
       <find>dragListInit</find>
       <find>list</find>
@@ -56,8 +60,24 @@
       <find>clickVoice</find>
       <find>next</find>
       <find>click</find>
+      <find>logos</find>
+      <find>halloween24</find>
+      <find>logos/2024/halloween24/rc3/play-sprite.png</find>
       <find>halloween24.js</find>
+      <find>this.g.src</find>
+      <find>logos/2024/halloween24/rc3/</find>
+      <find>play-sprite.png</find>
+      <find>cta</find>
+      <find>cta.png</find>
+      <find>/logos/2024/moon/r3/</find>
+      <find>img/</find>
+      <find>ddllog</find>
+      <find>moon.js</find>
     </findStrings>
+    <replaceStrings>
+      <replace>/img/halloween24/</replace>
+      <replace>/img/moon/</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,9 +89,13 @@
         <option value="$PROJECT_DIR$/career.html" />
         <option value="$PROJECT_DIR$/thd.html" />
         <option value="$PROJECT_DIR$/ming.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$USER_HOME$/Desktop/te.html" />
         <option value="$PROJECT_DIR$/halloween24.html" />
+        <option value="$PROJECT_DIR$/img/halloween24/halloween24.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/moon.html" />
+        <option value="$PROJECT_DIR$/img/moon/moon.js" />
+        <option value="$PROJECT_DIR$/gumby.html" />
       </list>
     </option>
   </component>
@@ -94,6 +118,11 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,12 +166,13 @@
       <updated>1730251411735</updated>
       <workItem from="1730251413238" duration="23891000" />
       <workItem from="1730336043725" duration="11552000" />
-      <workItem from="1730359326548" duration="3062000" />
+      <workItem from="1730359326548" duration="7961000" />
+      <workItem from="1730422612971" duration="9931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38505000" />
+    <option name="totallyTimeSpent" value="53335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -174,20 +204,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Desktop/celebrating-petanque_.html" />
-    <entry file="file://$PROJECT_DIR$/career.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -202,17 +218,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thd.html">
+    <entry file="file://$PROJECT_DIR$/img/halloween24/halloween24.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="144">
+          <caret line="1" column="227" selection-start-line="1" selection-start-column="227" selection-end-line="1" selection-end-column="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/moon/moon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="413" selection-start-line="24" selection-start-column="413" selection-end-line="24" selection-end-column="413" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/halloween24.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
+        <state relative-caret-position="311">
+          <caret line="1874" column="23" selection-start-line="1874" selection-start-column="23" selection-end-line="1874" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/career.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="202" column="15" lean-forward="true" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gumby.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+          <caret line="440" column="51" selection-start-line="440" selection-start-column="51" selection-end-line="440" selection-end-column="51" />
+          <caret line="445" column="30" selection-start-line="445" selection-start-column="30" selection-end-line="445" selection-end-column="30" />
         </state>
       </provider>
     </entry>
