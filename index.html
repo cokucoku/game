@@ -46,15 +46,16 @@
     background-image: -webkit-linear-gradient(top, #e40000, #ff0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
   }
 
-  #app ul {
+  #app .con ul {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% + 15px);
   }
 
-  #app ul li {
+  #app .con ul li {
     width: calc(33.33% - 15px);
     background: var(--fk);
     margin-right: 15px;
@@ -62,30 +63,38 @@
     overflow: hidden;
     border-radius: clamp(6px, 1vw, 15px);
   }
-  #app ul li .li{
+
+  #app .con ul li .li {
     padding-bottom: 45.384615384615%;
     position: relative;
   }
-  #app ul li .li a,#app ul li .li .mark{
+
+  #app .con ul li .li a, #app .con ul li .li .mark {
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
   }
-  #app ul li .li .mark{box-shadow: inset 0 0 3px rgba(0,0,0,.6);border-radius: clamp(6px, 1vw, 15px);
+
+  #app .con ul li .li .mark {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .6);
+    border-radius: clamp(6px, 1vw, 15px);
     z-index: 3;
   }
-  #app ul li .li img{
+
+  #app .con ul li .li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
   }
-  #app ul li .li i{
+
+  #app .con ul li .li i {
     width: 100%;
     position: absolute;
     z-index: 1;
-    font-style: normal;background: rgba(0,0,0,.6);
+    font-style: normal;
+    background: rgba(0, 0, 0, .6);
     color: #000;
     bottom: 0;
     display: flex;
@@ -95,14 +104,39 @@
     font-size: clamp(10px, 1vw, 18px);
     transition: all .3s;
   }
-  #app ul li .li:hover img{
 
-
-  }
-  #app .con{
+  #app .con {
     width: 95%;
     max-width: 1000px;
     margin: 0 auto;
+  }
+
+  #app .tab {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #app .tab ul {
+    display: flex;
+  }
+
+  #app .tab ul li {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: clamp(14px, 2vw, 20px);
+    padding: 15px 0;
+    border-bottom: solid 1px var(--gray8);
+  }
+
+  #app .tab ul li.on {
+    border: solid 1px var(--gray8);
+    border-bottom: none;
+    background: var(--gray8);
+    color: var(--white);
+
   }
 
 
@@ -110,10 +144,19 @@
 </head>
 <body>
 <div id="app">
-  <div class="title">益智游戏</div>
+  <div class="title">谷歌涂鸦-Google Doodles</div>
+  <div class="tab">
+    <ul>
+      <li v-for="item in category" :class="{on:cur==item.id}" @click="cur=item.id">{{item.text}}</li>
+    </ul>
+  </div>
   <div class="con">
     <ul>
-      <li v-for="item in list"><div class="li"><a :href="item.url" target="_blank"><div class="mark"></div><img :src="item.tpic"><i>{{item.title}}</i></a> </div></li>
+      <li v-for="item in list">
+        <div class="li"><a :href="item.url" target="_blank">
+          <div class="mark"></div>
+          <img :src="item.tpic"><i>{{item.title}}</i></a></div>
+      </li>
     </ul>
   </div>
 </div>
@@ -125,7 +168,34 @@
 new Vue({
     el: '#app',
     data: {
-        list:[]
+        list: [],
+        cur: 2,
+        category: [
+            {
+                id: 0,
+                text: '全部'
+            },
+            {
+                id: 1,
+                text: '动画图片'
+            },
+            {
+                id: 2,
+                text: '互动游戏'
+            },
+            {
+                id: 3,
+                text: '幻灯片'
+            },
+            {
+                id: 4,
+                text: '静态图片'
+            },
+            {
+                id: 5,
+                text: '视频'
+            }
+        ]
     },
     mounted() {
         let data = {
@@ -141,7 +211,17 @@ new Vue({
         }).then((rs) => {
             this.list = rs.data.data.list
         })
+    },
+    watch: {
+        cur: {
+            immediate: true,
+            handler(value) {
+                if(value==0){
 
+                }
+
+            }
+        }
     },
 })
 </script>
